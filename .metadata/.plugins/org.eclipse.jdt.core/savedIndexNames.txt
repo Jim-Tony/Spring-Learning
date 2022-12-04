@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\SWE\Spring Course\.metadata\.plugins\org.eclipse.jdt.core
+1647653652.index
+2011170344.index
