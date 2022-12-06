@@ -13,6 +13,9 @@
     
     <bean id="baseballCoach" class="com.coach.springdemo.BaseballCoach">
     </bean>
+    
+    <bean id="footballCoach" class="com.coach.springdemo.FootBallCoach">
+    </bean>
 </beans>
 
 

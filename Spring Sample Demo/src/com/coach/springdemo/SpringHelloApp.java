@@ -12,7 +12,7 @@ public class SpringHelloApp {
 		
 		//Retrieve Bean
 		Coach c1 = context.getBean("myCoach",Coach.class);
-		Coach c2 = context.getBean("baseballCoach",Coach.class);
+		Coach c2 = context.getBean("footballCoach",Coach.class);
 		
 		//Call methods on the Bean
 		System.out.println(c1.getDailyWorkout());
