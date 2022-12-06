@@ -12,10 +12,11 @@ public class SpringHelloApp {
 		
 		//Retrieve Bean
 		Coach c1 = context.getBean("myCoach",Coach.class);
+		Coach c2 = context.getBean("baseballCoach",Coach.class);
 		
 		//Call methods on the Bean
 		System.out.println(c1.getDailyWorkout());
-		
+		System.out.println(c2.getDailyWorkout());
 		
 		//Closing the context
 		context.close();
