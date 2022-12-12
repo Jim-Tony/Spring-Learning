@@ -7,5 +7,11 @@ public class FootBallCoach implements Coach{
 		// TODO Auto-generated method stub
 		return "Practice goal keeping 10 times";
 	}
+
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 		
 }

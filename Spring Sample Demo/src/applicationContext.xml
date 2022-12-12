@@ -12,9 +12,13 @@
     </bean>
     
     <bean id="baseballCoach" class="com.coach.springdemo.BaseballCoach">
+     <constructor-arg ref="myFortuneService"></constructor-arg>
     </bean>
     
     <bean id="footballCoach" class="com.coach.springdemo.FootBallCoach">
+    </bean>
+    
+    <bean id="myFortuneService" class="com.coach.springdemo.HappyFortuneService">
     </bean>
 </beans>
 
