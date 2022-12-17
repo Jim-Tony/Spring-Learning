@@ -11,11 +11,11 @@ public class SpringHelloApp {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		//Retrieve Bean
-		Coach c1 = context.getBean("myCoach",Coach.class);
-		Coach c2 = context.getBean("baseballCoach",Coach.class);
+//		Coach c1 = context.getBean("myCoach", Coach.class);
+		Coach c2 = context.getBean("footballCoach",Coach.class);
 		
 		//Call methods on the Bean
-		System.out.println(c1.getDailyFortune());
+		System.out.println(c2.getDailyFortune());
 		
 		//Closing the context
 		context.close();

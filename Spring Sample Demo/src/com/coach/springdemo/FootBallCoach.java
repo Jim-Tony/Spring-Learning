@@ -1,7 +1,11 @@
 package com.coach.springdemo;
 
 public class FootBallCoach implements Coach{
-
+	private FortuneService fortuneService;
+	
+	public void setFortuneService(FortuneService fortuneService) {
+		this.fortuneService = fortuneService;
+	}
 	@Override
 	public String getDailyWorkout() {
 		// TODO Auto-generated method stub
@@ -11,7 +15,7 @@ public class FootBallCoach implements Coach{
 	@Override
 	public String getDailyFortune() {
 		// TODO Auto-generated method stub
-		return null;
+		return fortuneService.getDailyFortune();
 	}
 		
 }
