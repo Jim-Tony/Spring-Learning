@@ -23,8 +23,9 @@
     </bean>
     
     <bean id="footballCoach" class="com.coach.springdemo.FootBallCoach">
-     	<property name="fortuneService" ref="myFortuneService">
-     	</property>
+     	<property name="fortuneService" ref="myFortuneService"></property>
+     	<property name="emailAddress" value="hello@gmail.com"></property>
+     	<property name="team" value="real madrid"></property>
     </bean>
      
     
