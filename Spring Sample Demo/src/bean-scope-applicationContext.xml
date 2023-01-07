@@ -7,9 +7,6 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
     
-    <!-- Defining the file properties  -->
-    <context:property-placeholder location="classpath:sport.properties"/>
-    <!-- Define your beans here -->
     
     <!--Bean Configuration for Fortune Service -->
     <bean id="myFortuneService" class="com.coach.springdemo.HappyFortuneService">
@@ -19,15 +16,10 @@
     	<constructor-arg ref="myFortuneService"></constructor-arg>
     </bean>
     
-    <bean id="baseballCoach" class="com.coach.springdemo.BaseballCoach">
+    <bean id="baseballCoach" class="com.coach.springdemo.BaseballCoach" scope="prototype">
     	<constructor-arg ref="myFortuneService"></constructor-arg>
     </bean>
     
-    <bean id="footballCoach" class="com.coach.springdemo.FootBallCoach">
-     	<property name="fortuneService" ref="myFortuneService"></property>
-     	<property name="emailAddress" value="${foo.email}"></property>
-     	<property name="team" value="${foo.team}"></property>
-    </bean>
      
     
 </beans>
