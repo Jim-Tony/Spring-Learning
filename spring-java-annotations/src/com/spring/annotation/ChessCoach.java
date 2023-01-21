@@ -5,13 +5,15 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ChessCoach implements Coach {
-
+	
+	//Field Injection
+	@Autowired
 	private FortuneService fortuneService;
 	
-	@Autowired
-	public void injectDependency(FortuneService fortuneService) {
-		this.fortuneService = fortuneService;
-	}
+//	@Autowired
+//	public void injectDependency(FortuneService fortuneService) {
+//		this.fortuneService = fortuneService;
+//	}
 	
 	@Override
 	public String getDailyWorkout() {
