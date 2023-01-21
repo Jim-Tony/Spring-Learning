@@ -7,7 +7,14 @@ public class TrackCoach implements Coach {
 	public TrackCoach(FortuneService theFortuneService) {
 		this.theFortuneService = theFortuneService;
 	}
-
+	
+	public void doStartupStuff() {
+		System.out.println("The bean started");
+	}
+	
+	public void doEndStuff() {
+		System.out.println("The bean finished");
+	}
 	@Override
 	public String getDailyWorkout() {
 		// TODO Auto-generated method stub
