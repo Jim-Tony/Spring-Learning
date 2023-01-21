@@ -1,6 +1,5 @@
 package com.spring.annotation;
 
-public interface Coach {
-	public String getDailyWorkout();
+public interface FortuneService {
 	public String getDailyFortune();
 }
