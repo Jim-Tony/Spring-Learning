@@ -12,7 +12,6 @@ public class RandomFortuneService implements FortuneService {
 			"Be safe today",
 			"Don't trust anybody"
 	};
-	
 	private Random r = new Random();
 	@Override
 	public String getDailyFortune() {
