@@ -1,5 +1,6 @@
 package com.spring.annotation;
 
+import org.springframework.beans.factory.annotation.Value;
 //import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -14,6 +15,9 @@ public class CarromCoach implements Coach {
 //		this.fortuneService = fortuneService;
 //	}
 	
+	@Value("${fort.one}")
+	private String fortune;
+	
 	@Override
 	public String getDailyWorkout() {
 		return "Nice workout should be done";
@@ -22,7 +26,7 @@ public class CarromCoach implements Coach {
 	@Override
 	public String getDailyFortune() {
 		// TODO Auto-generated method stub
-		return null;
+		return fortune;
 	}
  
 }
