@@ -10,5 +10,7 @@
 <h1> Hello this is the Main Menu</h1>
 <h2>Click here to access the form</h2>
 <a href="showForm">Click</a>
+<br> <br>
+<a href="student/showStudentForm">Student Form</a>
 </body>
 </html>

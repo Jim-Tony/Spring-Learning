@@ -7,7 +7,7 @@
 <title>Form</title>
 </head>
 <body>
-<form action="processFormVersionTwo" method="GET">
+<form action="processFormVersionThree" method="GET">
 	<label for="name">Enter the name</label>
 	<input id="name" name="myName" type="text">
 	<input type="submit">
